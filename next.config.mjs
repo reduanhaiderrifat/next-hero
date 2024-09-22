@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    images: {
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "www.themealdb.com",
+          port: "",
+          pathname: "/images/media/meals/**", // Corrected pathname
+        },
+      ],
+    },
+  };
+  
+  export default nextConfig;
+  
